@@ -1466,8 +1466,7 @@ namespace Tpetra {
 
     template<class OutMapType, class InMapType>
     OutMapType TPETRA_DEPRECATED
-    MapCloner<OutMapType, InMapType>::
-    clone (const InMapType& mapIn,
+    MapCloner<OutMapType, InMapType>::clone (const InMapType& mapIn,
            const Teuchos::RCP<out_node_type>& /* nodeOut */)
     {
       static_assert (std::is_same<typename OutMapType::local_ordinal_type,
